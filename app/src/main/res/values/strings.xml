@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PokeApi</string>
+
+    <string name="poke_name">%1$s</string>
+    <string name="poke_order">Number: %1$d</string>
+    <string name="poke_types">Type: %1$s</string>
+    <string name="poke_weight">Weight: %1$d</string>
+    <string name="poke_exp">Experience: %1$d</string>
+
+</resources>
