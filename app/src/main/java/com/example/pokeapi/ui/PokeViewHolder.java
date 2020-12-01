@@ -1,9 +1,11 @@
-package com.example.pokeapi;
+package com.example.pokeapi.ui;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.pokeapi.R;
 import com.example.pokeapi.databinding.ItemPokemonBinding;
+import com.example.pokeapi.ui.ShortPokemon;
 
 public class PokeViewHolder extends RecyclerView.ViewHolder {
 

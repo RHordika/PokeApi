@@ -1,8 +1,9 @@
-package com.example.pokeapi;
+package com.example.pokeapi.repository;
 
 import android.content.Context;
 
-import java.util.List;
+import com.example.pokeapi.domain.Pokemon;
+import com.example.pokeapi.domain.PokemonListResponse;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;

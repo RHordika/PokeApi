@@ -1,4 +1,4 @@
-package com.example.pokeapi;
+package com.example.pokeapi.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -9,8 +9,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.pokeapi.databinding.ActivityMainBinding;
-
-import java.util.List;
+import com.example.pokeapi.domain.PokemonListResponse;
+import com.example.pokeapi.repository.ApiClient;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -30,6 +30,15 @@ public class MainActivity extends AppCompatActivity implements PokemonAdapter.Po
         adapter.setPokemonClickListener(this);
         binding.recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         binding.recyclerView.setAdapter(adapter);
+        binding.favoriteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, FavoritesActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
 
         ApiClient apiClient = new ApiClient(this);

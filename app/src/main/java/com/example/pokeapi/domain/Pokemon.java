@@ -1,14 +1,21 @@
-package com.example.pokeapi;
+package com.example.pokeapi.domain;
 
-import android.os.Parcelable;
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
+
+import com.example.pokeapi.ui.Type;
 
 import java.util.List;
 
+@Entity
 public class Pokemon {
 
     String name;
-    int id;
+    @PrimaryKey
+    public int id;
     int order;
+    @Ignore
     List<Type> types;
     int weight;
     int exp;

@@ -1,4 +1,6 @@
-package com.example.pokeapi;
+package com.example.pokeapi.domain;
+
+import com.example.pokeapi.ui.ShortPokemon;
 
 import java.util.List;
 

@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pokeapi.databinding.ItemPokemonBinding;
+import com.example.pokeapi.domain.Pokemon;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,4 +58,5 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokeViewHolder> {
     interface PokemonClickListener {
         void onPokemonClicked(ShortPokemon pokemon);
     }
+
 }

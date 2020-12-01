@@ -1,6 +1,7 @@
-package com.example.pokeapi;
+package com.example.pokeapi.repository;
 
-import java.util.List;
+import com.example.pokeapi.domain.Pokemon;
+import com.example.pokeapi.domain.PokemonListResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

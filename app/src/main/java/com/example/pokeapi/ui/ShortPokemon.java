@@ -1,4 +1,4 @@
-package com.example.pokeapi;
+package com.example.pokeapi.ui;
 
 public class ShortPokemon {
 
