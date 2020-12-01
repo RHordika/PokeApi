@@ -1,4 +1,4 @@
-package com.example.pokeapi;
+package com.example.pokeapi.ui;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,7 +8,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pokeapi.databinding.ItemPokemonBinding;
-import com.example.pokeapi.domain.Pokemon;
+import com.example.pokeapi.ui.PokeViewHolder;
+import com.example.pokeapi.ui.ShortPokemon;
 
 import java.util.ArrayList;
 import java.util.List;
